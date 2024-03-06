@@ -128,15 +128,16 @@ function filterAndLogIncidents(incidents) {
 }
 
 function haveAStartDate() {
-  if (process.argv[3] && process.argv[3] === '--startDate') {
+  logger.error(process.argv);
+  if (process.argv[2] && process.argv[2] === '--startDate') {
     return true;
   }
-  logger.error('--endDate is Missing');
+  logger.error('--startDate is Missing');
   return false;
 }
 
 function haveAEndDate() {
-  if (process.argv[5] && process.argv[5] === '--endDate') {
+  if (process.argv[4] && process.argv[4] === '--endDate') {
     return true;
   }
   logger.error('--endDate is Missing');
@@ -157,8 +158,8 @@ function checkParameters(startDate, endDate) {
 
 // Fonction principale
 function main() {
-  const startDate = new Date(process.argv[4]);
-  const endDate = new Date(process.argv[6]);
+  const startDate = new Date(process.argv[3]);
+  const endDate = new Date(process.argv[5]);
 
   if (!checkParameters(startDate, endDate)) {
     logger.error('Wrong paramaters or date format');

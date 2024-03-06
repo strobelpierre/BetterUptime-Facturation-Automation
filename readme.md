@@ -53,7 +53,7 @@ The application includes error handling for API requests, invalid date ranges, a
 - Make the library agnostic and transform main.js into an example of how to use the library.
 - Enable export to file functionality, allowing users to save reports or logs directly to a file.
 - Allow functionality with or without on-call intervals, catering to different user needs and scenarios.
-- Achieve 1K stars on GitHub, reflecting the community's recognition and trust in the library's value.
+- Achieve 1K stars on GitHub, reflecting the community's recognition and trust in the library's value.❤️❤️❤️❤️
 
 ## Contributing
 
