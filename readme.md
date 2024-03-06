@@ -49,6 +49,12 @@ node index.js --startDate YYYY-MM-DD --endDate YYYY-MM-DD
 
 The application includes error handling for API requests, invalid date ranges, and missing environment variables. Errors are logged using `pino`.
 
+## Development To-Do
+- Make the library agnostic and transform main.js into an example of how to use the library.
+- Enable export to file functionality, allowing users to save reports or logs directly to a file.
+- Allow functionality with or without on-call intervals, catering to different user needs and scenarios.
+- Achieve 1K stars on GitHub, reflecting the community's recognition and trust in the library's value.
+
 ## Contributing
 
 Contributions to enhance the functionality, improve efficiency, or fix bugs are welcome. Please follow the standard GitHub pull request process to submit your contributions.
