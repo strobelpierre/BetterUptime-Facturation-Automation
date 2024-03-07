@@ -27,11 +27,11 @@ This program is designed to automate the tracking and reporting of uptime incide
 4. Set up the required environment variables:
     - `BETTERUPTIME_API_KEY`: Your Better Uptime API key.
     - `BETTERUPTIME_API_ENDPOINT`: The endpoint URL for the Better Uptime API.
-    - `BETTERUTIME_CALENDAR_ID`: The ID of the calendar to fetch from Better Uptime.
-    - `BETTERUTPIME_WEEK_START_HOUR`: The start hours for the weeks day
-    - `BETTERUTPIME_WEEK_END_HOUR`: The end hours for the weeks day
-    - `BETTERUTPIME_WEEKEND_START_HOUR`: The start hours for the weekend days
-    - `BETTERUTPIME_WEEKEND_END_HOUR`: The end hours for the weekend days
+    - `BETTERUPTIME_CALENDAR_ID`: The ID of the calendar to fetch from Better Uptime.
+    - `BETTERUPTIME_WEEK_START_HOUR`: The start hours for the weeks day
+    - `BETTERUPTIME_WEEK_END_HOUR`: The end hours for the weeks day
+    - `BETTERUPTIME_WEEKEND_START_HOUR`: The start hours for the weekend days
+    - `BETTERUPTIME_WEEKEND_END_HOUR`: The end hours for the weekend days
 
 
 ## Usage

@@ -6,10 +6,10 @@ const logger = require('pino')();
 const _ = require('lodash');
 const betterUptimeService = require('./betterUptimeService');
 const config = {
-  betterUptimeWeekStartHour: process.env.BETTERUTPIME_WEEK_START_HOUR,
-  betterUptimeWeekEndHours: process.env.BETTERUTPIME_WEEK_END_HOUR,
-  betterUptimeWeekEndStartHour: process.env.BETTERUTPIME_WEEKEND_START_HOUR,
-  betterUptimeWeekEndHours: process.env.BETTERUTPIME_WEEKEND_END_HOUR,
+  betterUptimeWeekStartHour: process.env.BETTERUPTIME_WEEK_START_HOUR,
+  betterUptimeWeekEndHours: process.env.BETTERUPTIME_WEEK_END_HOUR,
+  betterUptimeWeekEndStartHour: process.env.BETTERUPTIME_WEEKEND_START_HOUR,
+  betterUptimeWeekEndHours: process.env.BETTERUPTIME_WEEKEND_END_HOUR,
 };
 // Fonctions utilitaires pour la gestion des dates
 function getLastDayOfTheMonth(date) {
@@ -178,8 +178,8 @@ function main() {
         const {weekdayIncidents, weekendIncidents} = filterAndLogIncidents(response); // Assurez-vous que `filterAndLogIncidents` attend un tableau d'incidents directement
         const grouppedWeekDayIncidents = _.groupBy(weekdayIncidents, 'acknowledged_by');
         const grouppedWeekEndDayIncidents = _.groupBy(weekendIncidents, 'acknowledged_by');
-        logger.info(grouppedWeekDayIncidents);
-        logger.info(grouppedWeekEndDayIncidents);
+        console.log(grouppedWeekDayIncidents);
+        console.log(grouppedWeekEndDayIncidents);
       })
       .catch((error) => {
         logger.error(error);

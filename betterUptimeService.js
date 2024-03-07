@@ -4,7 +4,7 @@ const logger = require('pino')();
 const config = {
   api_key: process.env.BETTERUPTIME_API_KEY,
   api_endpoint: process.env.BETTERUPTIME_API_ENDPOINT,
-  calendar_id: process.env.BETTERUTIME_CALENDAR_ID,
+  calendar_id: process.env.BETTERUPTIME_CALENDAR_ID,
 };
 
 /**
